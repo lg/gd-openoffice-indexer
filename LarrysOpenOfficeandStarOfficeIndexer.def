@@ -1,0 +1,9 @@
+; LarrysOpenOfficeandStarOfficeIndexer.def : Declares the module parameters.
+
+LIBRARY      "LarrysOpenOfficeandStarOfficeIndexer.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE

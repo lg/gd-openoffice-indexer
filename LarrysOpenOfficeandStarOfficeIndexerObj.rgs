@@ -1,0 +1,27 @@
+HKCR
+{
+	LarrysOpenOfficeandStarOfficeI.Larrys.1 = s 'LarrysOpenOfficeandStarOfficeIndexerObj Class'
+	{
+		CLSID = s '{EAE377CA-10EC-4933-A56F-E1824D0DEAC9}'
+	}
+	LarrysOpenOfficeandStarOfficeI.LarrysOp = s 'LarrysOpenOfficeandStarOfficeIndexerObj Class'
+	{
+		CLSID = s '{EAE377CA-10EC-4933-A56F-E1824D0DEAC9}'
+		CurVer = s 'LarrysOpenOfficeandStarOfficeI.Larrys.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {EAE377CA-10EC-4933-A56F-E1824D0DEAC9} = s 'LarrysOpenOfficeandStarOfficeIndexerObj Class'
+		{
+			ProgID = s 'LarrysOpenOfficeandStarOfficeI.Larrys.1'
+			VersionIndependentProgID = s 'LarrysOpenOfficeandStarOfficeI.LarrysOp'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{3ACD96E4-4DC6-4508-9A66-77BAD70CC3B4}'
+		}
+	}
+}

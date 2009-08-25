@@ -1,0 +1,37 @@
+// LarrysOpenOfficeandStarOfficeIndexer.idl : IDL source for LarrysOpenOfficeandStarOfficeIndexer
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (LarrysOpenOfficeandStarOfficeIndexer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(FD85EA87-18E2-495D-AAB6-14097420D235),
+	dual,
+	nonextensible,
+	helpstring("ILarrysOpenOfficeandStarOfficeIndexerObj Interface"),
+	pointer_default(unique)
+]
+interface ILarrysOpenOfficeandStarOfficeIndexerObj : IDispatch{
+	[id(1), helpstring("method HandleFile")] HRESULT HandleFile(BSTR RawFullPath, IDispatch* IFactory);
+};
+[
+	uuid(3ACD96E4-4DC6-4508-9A66-77BAD70CC3B4),
+	version(1.0),
+	helpstring("LarrysOpenOfficeandStarOfficeIndexer 1.0 Type Library")
+]
+library LarrysOpenOfficeandStarOfficeIndexerLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(EAE377CA-10EC-4933-A56F-E1824D0DEAC9),
+		helpstring("LarrysOpenOfficeandStarOfficeIndexerObj Class")
+	]
+	coclass LarrysOpenOfficeandStarOfficeIndexerObj
+	{
+		[default] interface ILarrysOpenOfficeandStarOfficeIndexerObj;
+	};
+};

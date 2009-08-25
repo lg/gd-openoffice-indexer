@@ -1,0 +1,40 @@
+Larry's OpenOffice and StarOffice Indexer
+Larry Gadea, trivex@gmail.com
+http://www.github.com/larrygadea
+http://twitter.com/lg
+
+Licensed under LGPLv3 because of zlib. See the included LICENSE file.
+
+Allow Google Desktop Search to index all OpenOffice.org and 
+StarOffice 6 or later files, including text documents, 
+spreadsheets, presentations and templates. Supported file types 
+are SXC, STC, SXD, STD, SXI, STI, SXW, SXG, STW and STM. Newly 
+added in version 1.01 is support for OpenDocument file types: ODT, 
+OTT, ODG, OTG, ODP, OTP, ODS, OTS, and ODF. Plugin source code is 
+available from trivex.net.
+
+This plugin works by extracting the zip archive that OpenOffice
+and StarOffice files are created as and indexing the content.xml
+file as text.
+
+To install, follow these instructions:
+   1. Run the "LarrysOpenOfficeandStarOfficeIndexer.exe" file in 
+      the zip.
+   2. Agree to the registration with Google Desktop Search.
+   3. You're done! Your system will now be indexing OpenOffice and
+      StarOffice files.
+
+To uninstall, follow these instructions:
+
+   1. Go to your Start menu and select "Control Panel".
+   2. Select "Add/Remove Programs"
+   3. Find "Larry's OpenOffice and StarOffice Indexer" and click 
+      "Remove".
+   4. Thats it!
+
+If you have any comments/concerns/questions/suggestions, whatever,
+feel free to contact me at trivex@trivex.net.
+
+ChangeLog (1.01)
+  - Added .stm for OpenOffice 1.x indexing
+  - Added OpenDocument file types.
